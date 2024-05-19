@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBuyMeme</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+      color: orange;
+      font-family: georgia, sans-serif;
+    }
+    canvas {
+      border: 2px solid orange;
+    }
+    #gameInfo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #gameInfo h1 {
+      margin: 0;
+    }
+    #gameInfo p {
+      margin: 5px 0;
+    }
+    #socialLinks {
+      margin-top: 20px;
+    }
+    #socialLinks a {
+      color: orange;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="gameInfo">
+    <h1>QuickBuyMeme</h1>
+    <p id="timer">Time: 25</p>
+    <p id="score">Score: 0</p>
+  </div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <div id="socialLinks">
+    <a href="https://x.com/QuickBuyMeme" target="_blank">Twitter</a>
+    <a href="https://t.me/QuickBuyMemeSolana" target="_blank">Telegram</a>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
